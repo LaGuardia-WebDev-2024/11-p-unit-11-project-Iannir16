@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
-/* ======================== CSS Rule #1 */
+/* ======================== background */
 html {
-  background-color: white;
+  background-image: url(https://media.istockphoto.com/id/1359274126/vector/tortoise-shell-background-texture-fashion-pattern.jpg?s=612x612&w=0&k=20&c=HWvheG_3969eHxh0Rbe4wK_zV7NxXNhxjf2phqbn87Q=); 
+  background-color: rgba(226, 209, 186, 0.5);
+  background-blend-mode:soft-light;
   padding-left: 20px;
 }
 
-/* ======================== CSS Rule #2 */
+/* ======================== typography */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  font-family: "Poetsen One", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(194, 122, 28);
+
 }
