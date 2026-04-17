@@ -29,11 +29,15 @@ Select ONE Additional
       <li>
         <h3 id="mem1">Memory #1</h3>
         <p>More about this memory.</p>
+        <img class="Concert1" src="https://soundchecksf.com/wp-content/uploads/2025/03/tylerthecreator_oakland_022425-27-copy.jpg">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
         <p>More about this memory.</p>
+        <img class="movie1" src="https://m.media-amazon.com/images/M/MV5BYjg1Mjc3MjQtMTZjNy00YWVlLWFhMWEtMWI3ZTgxYjJmNmRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+        <img class="movie2" src="https://dtrasler.com/wp-content/uploads/2025/07/jw-rebirth-2.jpg">
+        <img class="movie3" src="">
       </li>
 
       <li>
@@ -46,21 +50,55 @@ Select ONE Additional
     <script>
 
       // ======================== Button #1
+      var mem1count = 0;
+
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "brown");
+        if(mem1count==0){
+        $("#mem1").css("color", "Brown");
         $("#mem1").text("First Concert!");
+        $(".Concert1").show(1000);
+        mem1count = 1;
+        }
+        else if(mem1count==1){
+        $("#mem1").css("color", "black");
+        $("#mem1").text("Memory #1");
+         $(".Concert1").hide();
+        mem1count = 0;
+        }
       });
 
       // ======================== Button #2
+       var mem2count = 0;
+        
       $("#mem2-button").click(function () {
+         if(mem2count==0){
         $("#mem2").css("color", "brown");
         $("#mem2").text("Movies!");
+        mem2count = 1;
+         }
+         else if(mem2count==1){
+        $("#mem2").css("color", "black");
+        $("#mem2").text("Memory #2");
+        mem2count = 0;
+        }
       });
+    
 
       // ======================== Button #3
+      var mem3count = 0;
+        
+
       $("#mem3-button").click(function () {
+        if(mem3count==0){
         $("#mem3").css("color", "brown");
         $("#mem3").text("Miami!");
+         mem3count = 1;
+         }
+         else if(mem3count==1){
+        $("#mem3").css("color", "black");
+        $("#mem3").text("Memory #3");
+        mem3count = 0;
+        }
       });
 
 
