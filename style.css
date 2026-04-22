@@ -10,6 +10,7 @@ html {
 
 /* ======================== typography */
 h1 {
+ 
   font-family: "Poetsen One", sans-serif;
   color: rgb(0, 0, 0);
 }
@@ -20,3 +21,5 @@ button {
   background-color: rgb(194, 122, 28);
 
 }
+
+
