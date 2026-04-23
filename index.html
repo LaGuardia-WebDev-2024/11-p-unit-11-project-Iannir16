@@ -21,15 +21,21 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <div class="center">
+
+   
+   
+      <button id="mem1-button">Memory #1</button>
+      <button id="mem2-button">Memory #2</button>
+      <button id="mem3-button">Memory #3</button>
+      <h1>My Top 3 Memories of <span>This Year</span></h1>
+  
+
+
+  <div class="center"></div>
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p id="text1">More about this memory.</p>
         <img class="Concert1" 
         src="https://soundchecksf.com/wp-content/uploads/2025/03/tylerthecreator_oakland_022425-27-copy.jpg"
         width="250">
@@ -37,7 +43,7 @@ Select ONE Additional
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p id="text2">More about this memory.</p>
         <img class="movie1"
         src="https://m.media-amazon.com/images/M/MV5BYjg1Mjc3MjQtMTZjNy00YWVlLWFhMWEtMWI3ZTgxYjJmNmRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
         height="350">
@@ -51,7 +57,7 @@ Select ONE Additional
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p id="text3">More about this memory</p>
         <img class="Miami1"
         src="https://i.guim.co.uk/img/media/edccd4a1a99f26f6636c9a178a4d6d75f7b5700d/83_0_5827_3500/master/5827.jpg?width=445&dpr=1&s=none&crop=none"
         height="250">
@@ -61,7 +67,7 @@ Select ONE Additional
 
       </li>
     </ol>
-    </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -72,7 +78,7 @@ Select ONE Additional
       $("#mem1-button").click(function () {
         if(mem1count==0){
         $("#mem1").css("color", "Brown");
-       
+        $("#text1").text("For my 17th Birthday, I was able to see my favorite Music Artist Tyler, The Creator.")
         $("#mem1").text("First Concert!");
         $(".Concert1").show(1000);
         mem1count = 1;
@@ -80,6 +86,7 @@ Select ONE Additional
         else if(mem1count==1){
         $("#mem1").css("color", "black");
         $("#mem1").text("Memory #1");
+        $("#text1").text("more about this memory")
        
          $(".Concert1").hide();
         mem1count = 0;
@@ -93,6 +100,7 @@ Select ONE Additional
          if(mem2count==0){
         $("#mem2").css("color", "brown");
         $("#mem2").text("Movies!");
+        $("#text2").text("This year has brought many good movies, these are some that i saw in theaters that I really liked")
         $(".movie1").show(1000)
         $(".movie2").show(1000)
         $(".movie3").show(1000)
@@ -101,6 +109,7 @@ Select ONE Additional
          else if(mem2count==1){
         $("#mem2").css("color", "black");
         $("#mem2").text("Memory #2");
+        $("#text2").text("more about this memory")
         $(".movie1").hide()
         $(".movie2").hide()
         $(".movie3").hide()
@@ -117,6 +126,7 @@ Select ONE Additional
         if(mem3count==0){
         $("#mem3").css("color", "brown");
         $("#mem3").text("Miami!");
+        $("#text3").text("For Mid winter break I visited my cousin in Miami, It was my first time traveling without my parents.")
         $(".Miami1").show(1000)
         $(".Miami2").show(1000)
          mem3count = 1;
@@ -124,6 +134,7 @@ Select ONE Additional
          else if(mem3count==1){
         $("#mem3").css("color", "black");
         $("#mem3").text("Memory #3");
+        $("#text3").text("more about this memory")
         $(".Miami1").hide()
         $(".Miami2").hide()
         mem3count = 0;
